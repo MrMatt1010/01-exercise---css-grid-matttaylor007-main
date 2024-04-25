@@ -1,0 +1,71 @@
+.container {
+  max-width: 50rem;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Default styles for primary navigation and articles */
+.primary-nav-list,
+.primary-nav-item,
+.articles-list,
+.articles-item {
+  list-style-type: none; /* remove bullet points from list */
+  margin: 0; /* remove default margin from the browser */
+  padding: 0; /* remove default padding from the browser */
+}
+
+.primary-nav-link {
+  display: block; /* make the link go full width on mobile */
+  padding: 1rem;
+  background: #eee;
+}
+
+.primary-nav-link:focus, /* providing focus styles for keyboard navigation */
+.primary-nav-link:hover {
+  background: #ccc;
+}
+
+@media (min-width: 40rem) {
+  /* Write your CSS in here */
+  .article {
+      display: grid;
+      grid-template-columns: 70% 30%;
+      grid-gap: 2rem;
+    }
+    .footer {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+  
+    .copyright {
+      text-align: right;
+    }
+        .articles-list {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          grid-gap: 1rem;
+        }
+                .primary-nav-list {
+                  display: grid;
+                  grid-template-columns: min-content min-content min-content;
+                }
+.primary-nav {
+  justify-self: right;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 10rem auto;
+                                                                
+  .logo {
+      justify-self: center;
+      justify-self: center;
+    }
+
+}
+
+}
